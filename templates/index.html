@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Operations</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+</head>
+<style>/* Applying styles to the bank operations buttons and forms */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .operation-form {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .operation-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .deposit-button {
+      background-color: #4caf50;
+      color: #fff;
+    }
+    
+    .withdraw-button {
+      background-color: #f44336;
+      color: #fff;
+    }
+    
+    .open-account-button {
+      background-color: #2196f3;
+      color: #fff;
+    }
+    
+    .delete-account-button {
+      background-color: #ff9800;
+      color: #fff;
+    }
+
+    .tbutton{
+      background-color: #d85771;
+      color: #fff;    
+    }
+    
+    .operation-button:hover {
+      opacity: 0.8;
+    }
+    </style>
+<body>
+    <div class="header">
+        <h1>MAVY BANK - GROUP 16</h1>
+      </div>
+  <h2>Bank Operations</h2>
+  
+  <!-- Deposit Form -->
+  <form action="/deposit" method="post" class="operation-form" id="deposit-form">
+    <input type="hidden" name="operation" value="deposit">
+    <button type="submit" class="operation-button deposit-button">Deposit</button>
+  </form>
+  
+  <!-- Withdraw Form -->
+  <form action="/withdraw" method="post" class="operation-form" id="withdraw-form">
+    <input type="hidden" name="operation" value="withdraw">
+    <button type="submit" class="operation-button withdraw-button">Withdraw</button>
+  </form>
+  
+  <!-- Open Account Form -->
+  <form action="/openAccount" method="post" class="operation-form" id="open-account-form">
+    <input type="hidden" name="operation" value="open-account">
+    <button type="submit" class="operation-button open-account-button">Open Account</button>
+  </form>
+  
+  <!-- Delete Account Form -->
+  <form action="/deleteAccount" method="post" class="operation-form" id="delete-account-form">
+    <input type="hidden" name="operation" value="delete-account">
+    <button type="submit" class="operation-button delete-account-button">Delete Account</button>
+  </form>
+
+  <form action="/transfer" method="post" class="operation-form" id="delete-account-form">
+    <input type="hidden" name="operation" value="delete-account">
+    <button type="submit" class="operation-button tbutton">Transfer Money</button>
+  </form>
+
+</body>
+</html>
