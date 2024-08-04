@@ -1,5 +1,5 @@
 
-# Bank Management System
+# MAVY - Bank Management System
 
 This project is a simple bank management system that consists of a client-server architecture. The client-side is built using Flask and allows users to interact with the server to perform various banking operations such as opening an account, depositing money, withdrawing money, checking balance, and more. The server-side is implemented in Python and uses MySQL as the backend database to store and manage the bank data.
 
@@ -35,9 +35,9 @@ This project is a simple bank management system that consists of a client-server
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+   git clone https://github.com/YeshwanthBalaji2022/MAVY.git
    cd your-repository-name
-   ```
+   ```  
 
 2. **Set up the virtual environment**:
 
